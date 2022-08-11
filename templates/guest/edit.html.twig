@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Guest{% endblock %}
+
+{% block body %}
+    <h1>Modifier l'invité(e)</h1>
+
+    {{ include('guest/_form.html.twig', {'button_label': 'Valider la modification'}) }}
+
+    <a class="btn btn-outline-info" href="{{ path('app_guest_index') }}">Retour à la liste</a>
+
+{% endblock %}
